@@ -62,7 +62,7 @@ while True:
     showStudents(students)
   
   elif order == "M":
-    chgItem = int(input("Enter the item number to move up. "))
+    chgItem = int(input("Enter the item number to move up. ")) - 1
     studentsArr = students[chgItem-1]
     students[chgItem-1] = students[chgItem]
     students[chgItem] =  studentsArr
